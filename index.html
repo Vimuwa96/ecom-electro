@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Web App</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Slick Slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Start -->
+    <div class="top-nav">
+      <div class="container">
+        <div class="top-nav-wrapper">
+          <div class="discount-note">
+            <p class="d-flex my-auto">
+              Discount up to 35% for first purchase only this month.
+            </p>
+          </div>
+
+          <div class="location d-none d-sm-block">
+            <p class="d-flex my-auto">
+              <i class="bi bi-geo-alt" style="padding-right: 5px"></i> Find our
+              Shop
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="logo-section p-3">
+      <div class="container">
+        <div class="logo-section-wrapper">
+          <div class="site-logo">
+            <img
+              src="https://fullkit.moxcreative.com/electrodeals/wp-content/uploads/sites/8/elementor/thumbs/Logo_electrodeals-1-pqh2rs7jj702t6120hf28oa9rgzhabts8ff3d9id4w.png"
+              alt=""
+            />
+          </div>
+          <div class="d-none d-sm-block">
+            <div class="search-bar-wrapper">
+              <input type="text" class="search-bar" />
+              <button class="search-btn"><i class="bi bi-search"></i></button>
+            </div>
+          </div>
+          <div class="sign-up-section d-flex my-auto">
+            <div class="user-icon d-flex my-auto px-2">
+              <i class="bi bi-person-circle fs-4"></i>
+            </div>
+            <div class="sign-up">
+              <p class="d-flex my-auto">Sign in</p>
+              <h6 class="d-flex my-auto">Account</h6>
+            </div>
+          </div>
+          <div class="cart-wrapper d-flex my-auto">
+            <i class="bi bi-cart3 fs-4"></i><span><sup>0</sup></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-nav">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item px-2 dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categories
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navigation End -->
+
+    <!-- Hero Section Start -->
+    <div class="main-section-wrapper pt-5">
+      <div class="container">
+        <div class="row">
+          <!-- Left Menus -->
+          <div class="col-md-3 order-2 order-lg-0">
+            <!-- Departments -->
+            <div class="departments-wrapper p-4 px-2">
+              <div class="department-header text-center pt-3">
+                <h6>All Departments</h6>
+              </div>
+              <div class="departments">
+                <ul class="my-auto">
+                  <li class="department-name d-flex my-auto mb-2">
+                    <a href=""
+                      ><i
+                        class="bi bi-phone fs-5"
+                        style="padding-right: 8px"
+                      ></i>
+                      Cell Phones</a
+                    >
+                  </li>
+                  <li class="department-name mb-2">
+                    <a href=""
+                      ><i
+                        class="bi bi-laptop fs-5"
+                        style="padding-right: 8px"
+                      ></i>
+                      Computer & Laptops</a
+                    >
+                  </li>
+                  <li class="department-name mb-2">
+                    <a href=""
+                      ><i class="bi bi-tv fs-5" style="padding-right: 8px"></i>
+                      Televisions</a
+                    >
+                  </li>
+                  <li class="department-name mb-2">
+                    <a href=""
+                      ><i
+                        class="bi bi-controller fs-5"
+                        style="padding-right: 8px"
+                      ></i
+                      >Game & Console</a
+                    >
+                  </li>
+                  <li class="department-name mb-2">
+                    <a href=""
+                      ><i
+                        class="bi bi-smartwatch fs-5"
+                        style="padding-right: 8px"
+                      ></i>
+                      Smartwatch</a
+                    >
+                  </li>
+                  <li class="department-name mb-2">
+                    <a href=""
+                      ><i
+                        class="bi bi-camera fs-5"
+                        style="padding-right: 8px"
+                      ></i>
+                      Camera & Photo</a
+                    >
+                  </li>
+                  <li class="department-name mb-2">
+                    <a href=""
+                      ><i
+                        class="bi bi-headset fs-5"
+                        style="padding-right: 8px"
+                      ></i>
+                      Headsets</a
+                    >
+                  </li>
+                  <li class="department-name mb-2">
+                    <a href=""
+                      ><i
+                        class="bi bi-bookmark-check-fill fs-5"
+                        style="padding-right: 8px"
+                      ></i>
+                      Discount Products</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Right Menu -->
+          <div class="col-md-9 order-1 order-lg-1">
+            <div class="mini-carousel">
+              <div class="your-class">
+                <div class="carousel-img">
+                  <img src="images/1.png" alt="" width="100%" />
+                  <div class="carousel-text text-center">
+                    <p><a href="">Shop Now</a></p>
+                  </div>
+                </div>
+                <div>
+                  <img src="images/1.png" alt="" width="100%" />
+                  <div class="carousel-text text-center">
+                    <p><a href="">Shop Now</a></p>
+                  </div>
+                </div>
+                <div>
+                  <img src="images/1.png" alt="" width="100%" />
+                  <div class="carousel-text text-center">
+                    <p><a href="">Shop Now</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section End  -->
+
+    <!-- Brand Section -->
+    <div class="our-products-brands">
+      <div class="container">
+        <div class="brands-wrapper">
+          <div class="brand">
+            <img
+              src="https://fullkit.moxcreative.com/electrodeals/wp-content/uploads/sites/8/2022/06/logo-11.png"
+              alt="brand"
+            />
+          </div>
+          <div class="brand">
+            <img
+              src="https://fullkit.moxcreative.com/electrodeals/wp-content/uploads/sites/8/2022/06/logo-5.png"
+              alt="brand"
+              height="100%"
+            />
+          </div>
+          <div class="brand">
+            <img
+              src="https://fullkit.moxcreative.com/electrodeals/wp-content/uploads/sites/8/2022/06/logo-4.png"
+              alt="brand"
+            />
+          </div>
+          <div class="brand">
+            <img
+              src="https://fullkit.moxcreative.com/electrodeals/wp-content/uploads/sites/8/2022/06/logo-2.png"
+              alt="brand"
+            />
+          </div>
+          <div class="brand">
+            <img
+              src="https://fullkit.moxcreative.com/electrodeals/wp-content/uploads/sites/8/2022/06/logo-3.png"
+              alt="brand"
+            />
+          </div>
+          <div class="brand">
+            <img
+              src="https://fullkit.moxcreative.com/electrodeals/wp-content/uploads/sites/8/2022/06/logo-1.png"
+              alt="brand"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Brand Section End -->
+
+    <!-- Products Section -->
+    <div class="on-sale-wrapper">
+      <div class="container p-5" id="on-sale-wrapper">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="flash-sale pt-4">
+              <div class="flash-sale-card-wrapper text-center">
+                <div class="flash-sale-icon">
+                  <i class="bi bi-lightning-fill fs-1"></i>
+                </div>
+                <div class="flash-sale-header pt-3">
+                  <h5>Flash Sale</h5>
+                </div>
+                <div class="flash-sale-description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                    nam qui. Voluptatum quaerat soluta temporibus!
+                  </p>
+                </div>
+                <div class="flash-sale-timer text-center">
+                  <div class="hours text-center">
+                    <h5>21</h5>
+                    <p class="text-center">Hours</p>
+                  </div>
+                  <div class="minutes text-center">
+                    <h5>49</h5>
+                    <p>Minutes</p>
+                  </div>
+                  <div class="seconds text-center">
+                    <h5>50</h5>
+                    <p>Seconds</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="row">
+              <div class="col-md-3 col-6 px-3 d-flex align-items-stretch">
+                <div class="product-card-wrapper p-2">
+                  <div class="product-card p-3">
+                    <div class="product-card-image">
+                      <img
+                        src="https://fullkit.moxcreative.com/electrodeals/wp-content/uploads/sites/8/2022/06/4-300x300.jpg"
+                        alt="product-image"
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                    <div class="sale-tag d-flex my-auto">
+                      <p class="d-flex my-auto">Sale!</p>
+                    </div>
+                    <div class="product-name">
+                      <p>Mizuna 8 Pro Android Smartphone</p>
+                    </div>
+                    <div class="prices">
+                      <div class="was-price">
+                        <p>$999.00</p>
+                      </div>
+                      <div class="new-price">
+                        <p>$829.00</p>
+                      </div>
+                    </div>
+                    <div class="add-to-cart pt-4">
+                      <button class="add-to-cart-btn">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 px-3 d-flex align-items-stretch">
+                <div class="product-card-wrapper p-2">
+                  <div class="product-card p-3">
+                    <div class="product-card-image">
+                      <img
+                        src="https://fullkit.moxcreative.com/electrodeals/wp-content/uploads/sites/8/2022/06/7-300x300.jpg"
+                        alt="product-image"
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                    <div class="sale-tag d-flex my-auto">
+                      <p class="d-flex my-auto">Sale!</p>
+                    </div>
+                    <div class="product-name">
+                      <p>Banna Watch Series 3 GPS- 42mm -Sprot Band</p>
+                    </div>
+                    <div class="prices">
+                      <div class="was-price">
+                        <p>$999.00</p>
+                      </div>
+                      <div class="new-price">
+                        <p>$829.00</p>
+                      </div>
+                    </div>
+                    <div class="add-to-cart pt-4">
+                      <button class="add-to-cart-btn">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 px-3 d-flex align-items-stretch">
+                <div class="product-card-wrapper p-2">
+                  <div class="product-card p-3">
+                    <div class="product-card-image">
+                      <img
+                        src="https://fullkit.moxcreative.com/electrodeals/wp-content/uploads/sites/8/2022/06/6-300x300.jpg"
+                        alt="product-image"
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                    <div class="sale-tag d-flex my-auto">
+                      <p class="d-flex my-auto">Sale!</p>
+                    </div>
+                    <div class="product-name">
+                      <p>
+                        Makko SmartTV 75 inc Class 4K Ultra HD HDR Smart QLED TV
+                      </p>
+                    </div>
+                    <div class="prices">
+                      <div class="was-price">
+                        <p>$999.00</p>
+                      </div>
+                      <div class="new-price">
+                        <p>$829.00</p>
+                      </div>
+                    </div>
+                    <div class="add-to-cart pt-4">
+                      <button class="add-to-cart-btn">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 px-3 d-flex align-items-stretch">
+                <div class="product-card-wrapper p-2">
+                  <div class="product-card p-3">
+                    <div class="product-card-image">
+                      <img
+                        src="https://fullkit.moxcreative.com/electrodeals/wp-content/uploads/sites/8/2022/06/1.1-300x300.jpg"
+                        alt="product-image"
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                    <div class="sale-tag d-flex my-auto">
+                      <p class="d-flex my-auto">Sale!</p>
+                    </div>
+                    <div class="product-name">
+                      <p>Laptop Screener CX70 2QF-621XPL 17.3″ 4210</p>
+                    </div>
+                    <div class="prices">
+                      <div class="was-price">
+                        <p>$999.00</p>
+                      </div>
+                      <div class="new-price">
+                        <p>$829.00</p>
+                      </div>
+                    </div>
+                    <div class="add-to-cart pt-4">
+                      <button class="add-to-cart-btn">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Product Section End -->
+
+    <!-- Category Section -->
+    <div class="categories-wrappper pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="categories-card-wrapper">
+              <div class="categories-card">
+                <div class="card-details-wrapper p-5">
+                  <div class="card-header">
+                    <h5>Smart Watch</h5>
+                  </div>
+                  <div class="card-description" style="width: 200px">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat, dolores!
+                    </p>
+                  </div>
+                  <div class="card-action-btn">
+                    <a href="">Learn more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="category-image-wrapper">
+                <img
+                  src="https://fullkit.moxcreative.com/electrodeals/wp-content/uploads/sites/8/2022/06/7-300x300.jpg"
+                  alt="Category-image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="categories-card-wrapper">
+              <div class="categories-card">
+                <div class="card-details-wrapper p-5">
+                  <div class="card-header">
+                    <h5>Desktops</h5>
+                  </div>
+                  <div class="card-description" style="width: 200px">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat, dolores!
+                    </p>
+                  </div>
+                  <div class="card-action-btn">
+                    <a href="">Learn more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="category-image-wrapper">
+                <img
+                  src="https://redtech.lk/wp-content/uploads/2024/02/Titan-18-HX-A14VIG-300x300.png"
+                  alt="Category-image"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="categories-card-wrapper">
+              <div class="categories-card">
+                <div class="card-details-wrapper p-5">
+                  <div class="card-header">
+                    <h5>Headsets</h5>
+                  </div>
+                  <div class="card-description" style="width: 200px">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellat, dolores!
+                    </p>
+                  </div>
+                  <div class="card-action-btn">
+                    <a href="">Learn more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="category-image-wrapper">
+                <img
+                  src="https://redtech.lk/wp-content/uploads/2021/11/LOGITECH-G331-%E2%80%93-Premium-Gaming-Headset-300x300.png"
+                  alt="Category-image"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Category Section End -->
+
+    <!-- New Arrivals  -->
+    <div class="new-arrivals-wrapper vh-100 pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+
+          </div>
+          <div class="col-md-9">
+            <h2 class="new-arrivals-header"><span>New Arrivals</span></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="js/style.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/slick.js"></script>
+  </body>
+</html>
