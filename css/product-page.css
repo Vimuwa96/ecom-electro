@@ -1,0 +1,121 @@
+.page-links-wrapper a{
+    font-size:small ;
+    color: grey;
+}
+
+.page-links-wrapper{
+    border-bottom: 1px solid rgb(229, 226, 226);
+    
+}
+
+.page-links{
+    display: flex;
+}
+
+.page-links-product-name{
+    font-size: small;
+}
+
+.product-details-name h4{
+    font-size: larger;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.product-SKU {
+    font-size: small;
+    color: grey;
+}
+
+.product-SKU p span{
+    font-weight: 600;
+    color: grey;
+}
+
+.product-details-prices{
+    display: flex;
+
+}
+
+.product-details-was-price h4{
+    text-decoration: line-through;
+    color: grey;
+    font-family: "Poppins", sans-serif;
+    padding-right: 15px;
+}
+
+.product-details-new-price h4{
+  
+    color: rgb(190, 64, 10);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+ul li {
+    font-size: small;
+    color: grey;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.product-add-to-cart-btn{
+    background-color: rgb(231, 76, 60);
+    color: aliceblue;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+}
+
+.product-qty{
+    border: 1px solid rgb(218, 214, 214);
+    width: 55px;
+    padding: 10px 15px 15px 5px;
+    border-radius: 5px;
+}
+
+.product-qty:focus{
+    border-color: rgb(218, 214, 214)!important;
+    outline: none;
+}
+.product-qty-wrapper{
+    display: flex;
+}
+
+.product-qty-wrapper-note{
+    font-size: small;
+    color: grey;
+    font-family: "Poppins", sans-serif;
+}
+
+.share-this-product p{
+    font-size: small;
+}
+
+.share-this-product i{
+    color: red;
+}
+
+.share-apps{
+    display: flex;
+    justify-content:space-around;
+    width: 100px;
+}
+
+.share-apps a i{
+    background-color: rgb(236, 234, 234);
+    padding: 8px 10px;
+    color: brown;
+    transition: 0.3s ease-in;
+}
+
+
+.share-apps a i:hover{
+    background-color: brown;
+    color: white;
+}
+
+.thamb-image{
+    border: 1px solid rgb(230, 228, 228);
+}
+
