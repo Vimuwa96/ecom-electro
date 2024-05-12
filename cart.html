@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Web App</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product-page.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Slick Slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <!-- Navigation Start -->
+      <div class="top-nav">
+        <div class="container">
+          <div class="top-nav-wrapper">
+            <div class="discount-note">
+              <p class="d-flex my-auto">
+                Discount up to 35% for first purchase only this month.
+              </p>
+            </div>
+
+            <div class="location d-none d-sm-block">
+              <p class="d-flex my-auto">
+                <i class="bi bi-geo-alt" style="padding-right: 5px"></i> Find
+                our Shop
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logo-section p-3">
+        <div class="container">
+          <div class="logo-section-wrapper">
+            <div class="site-logo">
+              <img
+                src="https://fullkit.moxcreative.com/electrodeals/wp-content/uploads/sites/8/elementor/thumbs/Logo_electrodeals-1-pqh2rs7jj702t6120hf28oa9rgzhabts8ff3d9id4w.png"
+                alt=""
+              />
+            </div>
+            <div class="d-none d-sm-block">
+              <div class="search-bar-wrapper">
+                <input type="text" class="search-bar" />
+                <button class="search-btn"><i class="bi bi-search"></i></button>
+              </div>
+            </div>
+            <div class="sign-up-section d-flex my-auto">
+              <div class="user-icon d-flex my-auto px-2">
+                <i class="bi bi-person-circle fs-4"></i>
+              </div>
+              <div class="sign-up">
+                <p class="d-flex my-auto">Sign in</p>
+                <h6 class="d-flex my-auto">Account</h6>
+              </div>
+            </div>
+            <div class="cart-wrapper d-flex my-auto">
+              <i class="bi bi-cart3 fs-4"></i><span><sup>2</sup></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-nav">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item px-2">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item px-2 dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Categories
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link" href="">Contact us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Navigation End -->
+      <!-- Page Links -->
+      <div class="page-links-wrapper">
+        <div class="container p-2">
+          <div class="page-links">
+            <div class="page-links-home">
+              <a href="index.html">Home</a>
+              <span style="padding: 0 5px 0 5px">/</span>
+            </div>
+            <div class="page-links-category">
+              <a href="">Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page Links End -->
+      <div class="cart-content pt-5">
+        <div class="container">
+          <div class="cart-table">
+            <div class="table-responsive">
+              <table class="table cart-table">
+                <thead>
+                  <th></th>
+                  <th>Item</th>
+                  <th>Description</th>
+                  <th>Price</th>
+                  <th>Qty</th>
+                  <th>Amount</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="delete-cart align-middle">
+                      <a href="#"><i class="bi bi-x-circle"></i></a>
+                    </td>
+                    <td class="align-middle">
+                      <img
+                        src="https://fullkit.moxcreative.com/electrodeals/wp-content/uploads/sites/8/2022/06/3.jpg"
+                        alt="cart-image"
+                        width="80px"
+                      />
+                    </td>
+                    <td class="align-middle" style="font-size: small">
+                      Mizuna 7 Max Android Smartphone Bundling
+                    </td>
+                    <td class="amount align-middle">87,000.00</td>
+                    <td class="align-middle">
+                      <input type="number" class="product-qty" value="1" />
+                    </td>
+                    <td class="amount align-middle">87,000.00</td>
+                  </tr>
+                  <tr>
+                    <td class="delete-cart align-middle">
+                      <a href=""><i class="bi bi-x-circle"></i></a>
+                    </td>
+                    <td class="align-middle">
+                      <img
+                        src="https://fullkit.moxcreative.com/electrodeals/wp-content/uploads/sites/8/2022/06/7-300x300.jpg"
+                        alt="cart-image"
+                        width="80px"
+                      />
+                    </td>
+                    <td class="align-middle" style="font-size: small">
+                      Banna Watch Series 3 GPS- 42mm -Sprot Band
+                    </td>
+                    <td class="amount align-middle">15,000.00</td>
+                    <td class="align-middle">
+                      <input type="number" class="product-qty" value="1" />
+                    </td>
+                    <td class="amount align-middle">15,000.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="summery-wrapper pb-5" style="overflow: hidden">
+                <div class="row pt-5">
+                  <div class="col-md-7"></div>
+                  <div class="col-md-5">
+                    <div class="table-summery p-5">
+                      <div class="table-summery-wrapper">
+                        <h6>Cart Total</h6>
+                        <div
+                          class="sub-total d-flex my-auto justify-content-between pt-2"
+                        >
+                          <div class="sub-total-header">
+                            <p class="d-flex my-auto">Subtotal</p>
+                          </div>
+                          <div class="sub-total-amount">
+                            <p class="d-flex my-auto">
+                              <strong>102,000.00 LKR</strong>
+                            </p>
+                          </div>
+                        </div>
+                        <hr />
+                        <div
+                          class="grand-total d-flex my-auto justify-content-between"
+                        >
+                          <div class="sub-total-header">
+                            <p class="d-flex my-auto"><strong>Total</strong></p>
+                          </div>
+                          <div class="sub-total-amount">
+                            <h4 class="d-flex my-auto">
+                              <strong>102,000.00 LKR</strong>
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checkout text-center">
+                      <a href="" class="text-center">Proceed to Checkout</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-services-wrapper pt-4 pb-4">
+      <div class="container">
+        <div class="row gx-3">
+          <div
+            class="col-md-3 col-6 d-flex my-auto justify-content-between position-relative g-3"
+          >
+            <div class="service-icon-wrapper px-3 d-flex my-auto">
+              <i class="bi bi-gem fs-2"></i>
+            </div>
+            <div class="service-description-wrapper">
+              <p class="d-flex my-auto" style="font-weight: 500">
+                Original Products
+              </p>
+              <p class="service-des d-flex my-auto" style="font-size: small">
+                100% Original product that covered warranty by the vendor.
+              </p>
+            </div>
+            <div
+              class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"
+            ></div>
+            <hr
+              class="position-absolute my-0 h-100 d-none d-md-block top-0 end-0"
+            />
+          </div>
+
+          <div
+            class="col-md-3 col-6 d-flex my-auto justify-content-between position-relative g-3"
+          >
+            <div class="service-icon-wrapper px-3 d-flex my-auto">
+              <i class="bi bi-shield-check fs-2"></i>
+            </div>
+            <div class="service-description-wrapper">
+              <p class="d-flex my-auto" style="font-weight: 500">
+                30 Days Warranty
+              </p>
+              <p class="service-des d-flex my-auto" style="font-size: small">
+                You have the right to return your orders within 30 days.
+              </p>
+            </div>
+            <div
+              class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"
+            ></div>
+          </div>
+          <div
+            class="col-md-3 col-6 d-flex my-auto justify-content-between position-relative g-3"
+          >
+            <div class="service-icon-wrapper px-3 d-flex my-auto">
+              <i class="bi bi-box fs-2"></i>
+            </div>
+            <div class="service-description-wrapper">
+              <p class="d-flex my-auto" style="font-weight: 500">
+                Global Shipping
+              </p>
+              <p class="service-des d-flex my-auto" style="font-size: small">
+                Your orders are shipped seamlessly between countries
+              </p>
+            </div>
+            <div
+              class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"
+            ></div>
+          </div>
+          <div
+            class="col-md-3 col-6 d-flex my-auto justify-content-between position-relative g-3"
+          >
+            <div class="service-icon-wrapper px-3 d-flex my-auto">
+              <i class="bi bi-lock fs-2"></i>
+            </div>
+            <div class="service-description-wrapper">
+              <p class="d-flex my-auto" style="font-weight: 500">100% Secure</p>
+              <p class="service-des d-flex my-auto" style="font-size: small">
+                Your payments are secure with our private security network.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer-wrapper">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-md-5 g-5">
+            <div class="footer-logo">
+              <img
+                src="https://fullkit.moxcreative.com/electrodeals/wp-content/uploads/sites/8/elementor/thumbs/Logo_electrodeals-1-pqh2rs7jj7073uo5mgjh8d7kn6gk95xxkuz1e6oi68.png"
+                alt="logo"
+                width="200px"
+              />
+            </div>
+            <div class="footer-des w-75">
+              <p style="font-size: small">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+                culpa expedita ea quas natus? Dignissimos!
+              </p>
+            </div>
+            <div class="footer-call pt-3 d-flex">
+              <div class="footer-call-icon d-flex my-auto px-2">
+                <i class="bi bi-headset fs-2"></i>
+              </div>
+              <div class="need-help px-2">
+                <p class="d-flex my-auto" style="font-size: smaller">
+                  Need help? Call us!
+                </p>
+                <h3 class="d-flex my-auto" style="font-weight: 600">
+                  800-7000-234
+                </h3>
+              </div>
+            </div>
+            <div class="social-icons d-flex justify-content-evenly w-50 pt-2">
+              <div class="social-link">
+                <a href=""><i class="bi bi-facebook"></i></a>
+              </div>
+              <div class="social-link">
+                <a href=""><i class="bi bi-twitter"></i></a>
+              </div>
+              <div class="social-link">
+                <a href=""><i class="bi bi-youtube"></i></a>
+              </div>
+              <div class="social-link">
+                <a href=""><i class="bi bi-instagram"></i></a>
+              </div>
+              <div class="social-link">
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 pt-3 g-5">
+            <div class="row">
+              <div class="col-md-4 g-3">
+                <div class="footer-header">
+                  <h6>Customer Service</h6>
+                  <div class="footer-link">
+                    <a href="" class="" style="font-size: smaller; color: grey"
+                      >Help Center</a
+                    >
+                  </div>
+                  <div class="footer-link">
+                    <a href="" class="" style="font-size: smaller; color: grey"
+                      >Track your order</a
+                    >
+                  </div>
+                  <div class="footer-link">
+                    <a href="" class="" style="font-size: smaller; color: grey"
+                      >My Account</a
+                    >
+                  </div>
+                  <div class="footer-link">
+                    <a href="" class="" style="font-size: smaller; color: grey"
+                      >Returns & Replacements</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 g-3">
+                <div class="footer-header">
+                  <h6>Get to Know Us</h6>
+                  <div class="footer-link">
+                    <a href="" class="" style="font-size: smaller; color: grey"
+                      >Help Center</a
+                    >
+                  </div>
+                  <div class="footer-link">
+                    <a href="" class="" style="font-size: smaller; color: grey"
+                      >Track your order</a
+                    >
+                  </div>
+                  <div class="footer-link">
+                    <a href="" class="" style="font-size: smaller; color: grey"
+                      >My Account</a
+                    >
+                  </div>
+                  <div class="footer-link">
+                    <a href="" class="" style="font-size: smaller; color: grey"
+                      >Returns & Replacements</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 g-3">
+                <div class="footer-header">
+                  <h6>Partnerships</h6>
+                  <div class="footer-link">
+                    <a href="" class="" style="font-size: smaller; color: grey"
+                      >Help Center</a
+                    >
+                  </div>
+                  <div class="footer-link">
+                    <a href="" class="" style="font-size: smaller; color: grey"
+                      >Track your order</a
+                    >
+                  </div>
+                  <div class="footer-link">
+                    <a href="" class="" style="font-size: smaller; color: grey"
+                      >My Account</a
+                    >
+                  </div>
+                  <div class="footer-link">
+                    <a href="" class="" style="font-size: smaller; color: grey"
+                      >Returns & Replacements</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="js/style.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/slick.js"></script>
+  </body>
+</html>

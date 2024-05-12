@@ -365,3 +365,93 @@ ul {
   font-weight: 600;
   font-family: "Poppins",sans-serif;
 }
+
+.main-services-wrapper{
+  background-color: rgb(231, 76, 60);
+  color: white;
+}
+
+.service-icon-wrapper i{
+  color: yellow;
+}
+
+.footer-call-icon{
+  color: rgb(231, 76, 60);
+}
+
+.social-link a{
+  background-color: rgb(241, 238, 238);
+  padding: 5px;
+}
+
+.social-link a i{
+  color: rgb(231, 76, 60);
+}
+
+.footer-header h6{
+  font-family: "Poppins",'sanserif';
+}
+
+th{
+  color: rgb(231, 76, 60);
+}
+
+.amount{
+  font-weight: 800;
+  color: #272626;
+}
+
+.gross-total{
+  font-size: larger;
+  font-weight: 800;
+  color: rgb(231, 76, 60);
+  display: flex;
+  justify-content: end;
+}
+
+
+.checkout{
+  padding: 12px 15px;
+  background-color: rgb(231, 76, 60);
+  color: white;
+}
+
+.checkout a{
+  color: white;
+}
+
+.shop-more{
+  padding: 12px 15px;
+  background-color: rgb(231, 76, 60);
+  color: white;
+}
+
+.shop-more a{
+  color: white;
+}
+
+.shop-more-checkout{
+  overflow: hidden;
+}
+
+.table-summery{
+  background-color: rgb(249, 248, 248);
+}
+
+.table-summery-wrapper h6{
+  font-weight: 800;
+}
+
+.sub-total-amount p{
+  font-weight: 600;
+  color:  rgb(0, 0, 0);
+}
+
+.sub-total-amount h4{
+  font-weight: 600;
+  color:  rgb(231, 76, 60);
+}
+
+.delete-cart i:hover{
+  color: red;
+}
